@@ -32,6 +32,9 @@
             this.pbground = new System.Windows.Forms.PictureBox();
             this.pbplayer = new System.Windows.Forms.PictureBox();
             this.tmrGravity = new System.Windows.Forms.Timer(this.components);
+            this.tmrup = new System.Windows.Forms.Timer(this.components);
+            this.tmrright = new System.Windows.Forms.Timer(this.components);
+            this.tmrleft = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pbground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbplayer)).BeginInit();
             this.SuspendLayout();
@@ -60,6 +63,24 @@
             this.tmrGravity.Interval = 10;
             this.tmrGravity.Tick += new System.EventHandler(this.tmrGravity_Tick);
             // 
+            // tmrup
+            // 
+            this.tmrup.Enabled = true;
+            this.tmrup.Interval = 10;
+            this.tmrup.Tick += new System.EventHandler(this.tmrup_Tick);
+            // 
+            // tmrright
+            // 
+            this.tmrright.Enabled = true;
+            this.tmrright.Interval = 10;
+            this.tmrright.Tick += new System.EventHandler(this.tmrright_Tick);
+            // 
+            // tmrleft
+            // 
+            this.tmrleft.Enabled = true;
+            this.tmrleft.Interval = 10;
+            this.tmrleft.Tick += new System.EventHandler(this.tmrleft_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -70,6 +91,8 @@
             this.Controls.Add(this.pbground);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.pbground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbplayer)).EndInit();
             this.ResumeLayout(false);
@@ -81,6 +104,9 @@
         private System.Windows.Forms.PictureBox pbground;
         private System.Windows.Forms.PictureBox pbplayer;
         private System.Windows.Forms.Timer tmrGravity;
+        private System.Windows.Forms.Timer tmrup;
+        private System.Windows.Forms.Timer tmrright;
+        private System.Windows.Forms.Timer tmrleft;
     }
 }
 

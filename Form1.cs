@@ -24,5 +24,66 @@ namespace PlatformerHome
             if (!pbplayer.Bounds.IntersectsWith(pbground.Bounds) && isJumping == false)
                 pbplayer.Top += 10;
         }
+
+
+
+        private void tmrleft_Tick(object sender, EventArgs e)
+        {
+            pbplayer.Left -= 10;
+        }
+
+        private void tmrright_Tick(object sender, EventArgs e)
+        {
+            pbplayer.Left += 10;
+        }
+
+        private void tmrup_Tick(object sender, EventArgs e)
+        {
+            pbplayer.Top -= 10;
+            isJumping = true;
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Up)
+            {
+                tmrup.Start();
+            }
+           else if (e.KeyCode == Keys.Right)
+            {
+                tmrright.Start();
+            }
+            else if (e.KeyCode == Keys.Left)
+            {
+                tmrleft.Start();
+            }
+
+
+
+        }
+
+        private void Form1_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Up)
+            {
+                tmrup.Stop();
+                isJumping = false;
+            }
+            else if (e.KeyCode == Keys.Right)
+            {
+                tmrright.Stop();
+            }
+            else if (e.KeyCode == Keys.Left)
+            {
+                tmrleft.Stop();
+            }
+        }
     }
-}
+
+   
+
+
+
+    }
+  
+
