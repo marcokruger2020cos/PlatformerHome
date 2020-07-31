@@ -14,6 +14,7 @@ namespace PlatformerHome
     {
 
         bool isJumping = false;
+
         public Form1()
         {
             InitializeComponent();
@@ -22,26 +23,32 @@ namespace PlatformerHome
         private void tmrGravity_Tick(object sender, EventArgs e)
         {
             if (!pbplayer.Bounds.IntersectsWith(pbground.Bounds) && isJumping == false)
+            {
                 pbplayer.Top += 10;
+
+            }
+          
         }
+       
 
-
+    private void tmrup_Tick(object sender, EventArgs e)
+        {
+            pbplayer.Top -= 10;
+            isJumping = true;
+        }
+        private void tmrright_Tick(object sender, EventArgs e)
+        {
+            pbplayer.Left += 10;
+        }
 
         private void tmrleft_Tick(object sender, EventArgs e)
         {
             pbplayer.Left -= 10;
         }
 
-        private void tmrright_Tick(object sender, EventArgs e)
-        {
-            pbplayer.Left += 10;
-        }
+      
 
-        private void tmrup_Tick(object sender, EventArgs e)
-        {
-            pbplayer.Top -= 10;
-            isJumping = true;
-        }
+       
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
@@ -51,7 +58,7 @@ namespace PlatformerHome
             }
            else if (e.KeyCode == Keys.Right)
             {
-                tmrright.Start();
+                tmrRight.Start();
             }
             else if (e.KeyCode == Keys.Left)
             {
@@ -71,7 +78,7 @@ namespace PlatformerHome
             }
             else if (e.KeyCode == Keys.Right)
             {
-                tmrright.Stop();
+                tmrRight.Stop();
             }
             else if (e.KeyCode == Keys.Left)
             {
@@ -79,11 +86,7 @@ namespace PlatformerHome
             }
         }
     }
+ }
 
-   
-
-
-
-    }
   
 
