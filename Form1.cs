@@ -21,7 +21,7 @@ namespace PlatformerHome
 
         private void tmrGravity_Tick(object sender, EventArgs e)
         {
-            if (!pbplayer.Bounds.IntersectsWith(pbground.Bounds) && isJumping == false)
+            if (pbplayer.Bounds.IntersectsWith(pbground.Bounds) && isJumping == false)
                 pbplayer.Top += 10;
         }
 
