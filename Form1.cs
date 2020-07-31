@@ -23,6 +23,7 @@ namespace PlatformerHome
         {
             if (pbplayer.Bounds.IntersectsWith(pbground.Bounds) && isJumping == false)
                 pbplayer.Top += 10;
+            //This wont work for some god forsaken reason aahhhhh
         }
 
 
