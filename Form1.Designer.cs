@@ -53,7 +53,7 @@
             // pbplayer
             // 
             this.pbplayer.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pbplayer.Location = new System.Drawing.Point(142, 143);
+            this.pbplayer.Location = new System.Drawing.Point(321, 12);
             this.pbplayer.Name = "pbplayer";
             this.pbplayer.Size = new System.Drawing.Size(49, 54);
             this.pbplayer.TabIndex = 1;
@@ -86,7 +86,7 @@
             // platform
             // 
             this.platform.BackColor = System.Drawing.SystemColors.Highlight;
-            this.platform.Location = new System.Drawing.Point(440, 223);
+            this.platform.Location = new System.Drawing.Point(114, 244);
             this.platform.Name = "platform";
             this.platform.Size = new System.Drawing.Size(475, 20);
             this.platform.TabIndex = 2;
@@ -103,6 +103,7 @@
             this.Controls.Add(this.pbground);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.pbground)).EndInit();

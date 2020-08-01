@@ -12,13 +12,19 @@ namespace PlatformerHome
 {
     public partial class Form1 : Form
     {
+       
 
         bool isJumping = false;
+     
+
 
         public Form1()
         {
             InitializeComponent();
+
         }
+
+
 
         private void tmrGravity_Tick(object sender, EventArgs e)
         {
@@ -27,8 +33,20 @@ namespace PlatformerHome
                 pbplayer.Top += 10;
 
             }
-          
+            if (pbplayer.Bounds.IntersectsWith(platform.Bounds) && isJumping == true)
+            {
+                pbplayer.Top += 10;
+               
+
+            }
+            else if (pbplayer.Bounds.IntersectsWith(platform.Bounds) && isJumping == false)
+            {
+                pbplayer.Top -= 10;
+
+
+            }
         }
+
        
 
     private void tmrup_Tick(object sender, EventArgs e)
@@ -85,6 +103,13 @@ namespace PlatformerHome
                 tmrleft.Stop();
             }
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
  }
 
