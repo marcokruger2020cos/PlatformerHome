@@ -34,7 +34,7 @@ namespace PlatformerHome
 
             }
             if (pbplayer.Bounds.IntersectsWith(platform.Bounds) && isJumping == true)
-            {                                                                                                   //Figured this out all on my own feel pretty chufed about iit :)
+            {                                                                                                   //Figured this out all on my own feel pretty chufed about it :)
                 pbplayer.Top += 10;
                
 
