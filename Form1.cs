@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace PlatformerHome
 {
+   
     public partial class Form1 : Form
     {
        
@@ -35,7 +36,9 @@ namespace PlatformerHome
             }
             if (pbplayer.Bounds.IntersectsWith(platform.Bounds) && isJumping == true)
             {                                                                                                   //Figured this out all on my own feel pretty chufed about it :)
+                                                                                                                 //Picture Boxes Clip Through one anotheer.
                 pbplayer.Top += 10;
+                                                                                                                //A bunch of bugs do originate from this segment.
                
 
             }
