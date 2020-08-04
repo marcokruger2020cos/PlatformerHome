@@ -54,10 +54,11 @@
             // 
             this.pbplayer.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pbplayer.ErrorImage = global::PlatformerHome.Properties.Resources.alien;
+            this.pbplayer.Image = global::PlatformerHome.Properties.Resources.alien;
             this.pbplayer.InitialImage = global::PlatformerHome.Properties.Resources.alien;
-            this.pbplayer.Location = new System.Drawing.Point(265, 184);
+            this.pbplayer.Location = new System.Drawing.Point(261, 164);
             this.pbplayer.Name = "pbplayer";
-            this.pbplayer.Size = new System.Drawing.Size(49, 54);
+            this.pbplayer.Size = new System.Drawing.Size(53, 74);
             this.pbplayer.TabIndex = 1;
             this.pbplayer.TabStop = false;
             // 
