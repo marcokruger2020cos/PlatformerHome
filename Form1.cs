@@ -15,7 +15,7 @@ namespace PlatformerHome
     {
        
 
-        bool isJumping = false;
+        bool isJumping = false;                                            //This is telling it that its not jumping
      
 
 
@@ -37,22 +37,39 @@ namespace PlatformerHome
             if (pbplayer.Bounds.IntersectsWith(platform.Bounds) && isJumping == true)
             {                                                                                                   //Figured this out all on my own feel pretty chufed about it :)
                                                                                                                  //Picture Boxes Clip Through one anotheer.
-                pbplayer.Top += 10;
+                pbplayer.Top += 10;                                                                              // + and - means the opposite
                                                                                                                 //A bunch of bugs do originate from this segment.
                
 
             }
             else if (pbplayer.Bounds.IntersectsWith(platform.Bounds) && isJumping == false)
             {
-                pbplayer.Top -= 10;
+                pbplayer.Top -= 10;                           // + and - means the opposite
 
 
             }
         }
 
-       
+        public void CreateMyMainMenu()
+        {
+            // Create an empty MainMenu.
+            MainMenu mainMenu1 = new MainMenu();
 
-    private void tmrup_Tick(object sender, EventArgs e)
+            MenuItem menuItem1 = new MenuItem();
+            MenuItem menuItem2 = new MenuItem();
+
+            menuItem1.Text = "File";
+            menuItem2.Text = "Edit";
+            // Add two MenuItem objects to the MainMenu.
+            mainMenu1.MenuItems.Add(menuItem1);
+            mainMenu1.MenuItems.Add(menuItem2);
+
+            // Bind the MainMenu to Form1.
+            Menu = mainMenu1;
+        }
+
+
+        private void tmrup_Tick(object sender, EventArgs e)
         {
             pbplayer.Top -= 10;
             isJumping = true;

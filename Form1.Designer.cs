@@ -44,9 +44,9 @@
             // pbground
             // 
             this.pbground.BackColor = System.Drawing.SystemColors.Highlight;
-            this.pbground.Location = new System.Drawing.Point(-53, 466);
+            this.pbground.Location = new System.Drawing.Point(-1514, 466);
             this.pbground.Name = "pbground";
-            this.pbground.Size = new System.Drawing.Size(1036, 24);
+            this.pbground.Size = new System.Drawing.Size(3847, 24);
             this.pbground.TabIndex = 0;
             this.pbground.TabStop = false;
             // 
@@ -56,9 +56,9 @@
             this.pbplayer.ErrorImage = global::PlatformerHome.Properties.Resources.alien;
             this.pbplayer.Image = global::PlatformerHome.Properties.Resources.alien;
             this.pbplayer.InitialImage = global::PlatformerHome.Properties.Resources.alien;
-            this.pbplayer.Location = new System.Drawing.Point(261, 164);
+            this.pbplayer.Location = new System.Drawing.Point(262, 217);
             this.pbplayer.Name = "pbplayer";
-            this.pbplayer.Size = new System.Drawing.Size(53, 74);
+            this.pbplayer.Size = new System.Drawing.Size(52, 21);
             this.pbplayer.TabIndex = 1;
             this.pbplayer.TabStop = false;
             // 
@@ -100,7 +100,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(957, 502);
+            this.ClientSize = new System.Drawing.Size(1205, 502);
             this.Controls.Add(this.platform);
             this.Controls.Add(this.pbplayer);
             this.Controls.Add(this.pbground);
