@@ -9,9 +9,6 @@ namespace PlatformerHome
 {
     class Enemy
     {
-       
-
-
 
     }
 }
