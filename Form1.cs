@@ -15,6 +15,8 @@ namespace PlatformerHome
        
 
         bool isJumping = false;
+        List<Coin> cList = new List<Coin>();
+        int Score = 0;
      
 
 
@@ -106,10 +108,40 @@ namespace PlatformerHome
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            Coin c1 = new Coin();
+            c1.drawTo(this);
+            cList.Add(c1);
+            c1.setPos(100, 200);
+            Coin c2 = new Coin();
+            c2.drawTo(this);
+            cList.Add(c2);
+            c2.setPos(200, 300);
         }
 
-       
+        private void tmrGameloop_Tick(object sender, EventArgs e)
+        {
+            foreach(Coin c in cList)
+            {
+                if(pbplayer.Bounds.IntersectsWith(c.getBounds()))
+                {
+                    c.setPos(1001, 1001);
+                    Score++;
+                    lblScore.Text = "Score" + Score;
+                }
+
+
+
+            }  
+                
+                   
+                    
+                    
+                    }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
  }
 

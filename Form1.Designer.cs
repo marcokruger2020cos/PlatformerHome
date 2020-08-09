@@ -36,6 +36,8 @@
             this.tmrRight = new System.Windows.Forms.Timer(this.components);
             this.tmrleft = new System.Windows.Forms.Timer(this.components);
             this.platform = new System.Windows.Forms.PictureBox();
+            this.lblScore = new System.Windows.Forms.Label();
+            this.tmrGameloop = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pbground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbplayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.platform)).BeginInit();
@@ -92,12 +94,29 @@
             this.platform.TabIndex = 2;
             this.platform.TabStop = false;
             // 
+            // lblScore
+            // 
+            this.lblScore.AutoSize = true;
+            this.lblScore.Location = new System.Drawing.Point(13, 12);
+            this.lblScore.Name = "lblScore";
+            this.lblScore.Size = new System.Drawing.Size(44, 13);
+            this.lblScore.TabIndex = 3;
+            this.lblScore.Text = "Score 1";
+            this.lblScore.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // tmrGameloop
+            // 
+            this.tmrGameloop.Enabled = true;
+            this.tmrGameloop.Interval = 10;
+            this.tmrGameloop.Tick += new System.EventHandler(this.tmrGameloop_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(957, 502);
+            this.Controls.Add(this.lblScore);
             this.Controls.Add(this.platform);
             this.Controls.Add(this.pbplayer);
             this.Controls.Add(this.pbground);
@@ -110,6 +129,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbplayer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.platform)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -122,6 +142,9 @@
         private System.Windows.Forms.Timer tmrRight;
         private System.Windows.Forms.Timer tmrleft;
         private System.Windows.Forms.PictureBox platform;
+        private System.Windows.Forms.Label lblScore;
+        private System.Windows.Forms.Timer tmrGameloop;
     }
 }
 
+ 
