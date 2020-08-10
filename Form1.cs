@@ -33,10 +33,11 @@ namespace PlatformerHome
             if (!pbplayer.Bounds.IntersectsWith(pbground.Bounds) && isJumping == false)
             {
                 pbplayer.Top += 10;
+              
 
             }
             if (pbplayer.Bounds.IntersectsWith(platform.Bounds) && isJumping == true)
-            {                                                                                                   //Figured this out all on my own feel pretty chufed about iit :)
+            {                                                                                                   //Figured this out all on my own feel emty and fufuled.
                 pbplayer.Top += 10;
                
 
@@ -127,6 +128,7 @@ namespace PlatformerHome
                     c.setPos(1001, 1001);
                     Score++;
                     lblScore.Text = "Score" + Score;
+                  
                 }
 
 
