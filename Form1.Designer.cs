@@ -54,8 +54,11 @@
             // 
             // pbplayer
             // 
+            this.pbplayer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pbplayer.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pbplayer.Location = new System.Drawing.Point(298, 294);
+            this.pbplayer.Location = new System.Drawing.Point(477, 317);
             this.pbplayer.Name = "pbplayer";
             this.pbplayer.Size = new System.Drawing.Size(49, 54);
             this.pbplayer.TabIndex = 1;
@@ -101,7 +104,7 @@
             this.lblScore.Name = "lblScore";
             this.lblScore.Size = new System.Drawing.Size(44, 13);
             this.lblScore.TabIndex = 3;
-            this.lblScore.Text = "Score 1";
+            this.lblScore.Text = "Score 0";
             this.lblScore.Click += new System.EventHandler(this.label1_Click);
             // 
             // tmrGameloop
@@ -120,6 +123,7 @@
             this.Controls.Add(this.platform);
             this.Controls.Add(this.pbplayer);
             this.Controls.Add(this.pbground);
+            this.DoubleBuffered = true;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
