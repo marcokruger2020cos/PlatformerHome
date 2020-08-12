@@ -14,9 +14,9 @@ namespace PlatformerHome
     {
        
 
-        bool isJumping = false;
-        List<Coin> cList = new List<Coin>();
-        int Score = 0;
+        bool isJumping = false;                         // are you jumping no ok boomer!
+        List<Coin> cList = new List<Coin>();            //using the list for coinz
+        int Score = 0;                                  //using the int to set score
      
 
 
@@ -37,7 +37,7 @@ namespace PlatformerHome
 
             }
             if (pbplayer.Bounds.IntersectsWith(platform.Bounds) && isJumping == true)
-            {                                                                                                   //Figured this out all on my own feel emty and fufuled.
+            {                                                                                                   //Figured this out all on my own feel empty and fufuled.
                 pbplayer.Top += 10;
                
 
@@ -47,6 +47,15 @@ namespace PlatformerHome
                 pbplayer.Top -= 10;
 
 
+            }
+            if (pbplayer.Bounds.IntersectsWith(pictureBox1.Bounds) && isJumping ==true)
+            {
+                pbplayer.Left -= 10;
+                                                                                                        //THIS SECTION HAS TO BE DONE BETTER AS IT DOES NOT WORK WELL.
+            }
+            else if (pbplayer.Bounds.IntersectsWith(pictureBox1.Bounds) && isJumping == false)
+            {
+                pbplayer.Left -= 10;
             }
         }
 
@@ -72,13 +81,13 @@ namespace PlatformerHome
        
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
-        {
+        {                                                         //THIS IS THE INSTRUCTIONS FOR MOVEMENT
             if (e.KeyCode == Keys.Up)
             {
                 tmrup.Start();
             }
            else if (e.KeyCode == Keys.Right)
-            {
+            {               
                 tmrRight.Start();
             }
             else if (e.KeyCode == Keys.Left)

@@ -38,9 +38,11 @@
             this.platform = new System.Windows.Forms.PictureBox();
             this.lblScore = new System.Windows.Forms.Label();
             this.tmrGameloop = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbplayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.platform)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pbground
@@ -54,13 +56,11 @@
             // 
             // pbplayer
             // 
-            this.pbplayer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbplayer.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pbplayer.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pbplayer.Location = new System.Drawing.Point(477, 317);
+            this.pbplayer.Location = new System.Drawing.Point(321, 41);
             this.pbplayer.Name = "pbplayer";
-            this.pbplayer.Size = new System.Drawing.Size(49, 54);
+            this.pbplayer.Size = new System.Drawing.Size(57, 42);
             this.pbplayer.TabIndex = 1;
             this.pbplayer.TabStop = false;
             // 
@@ -113,12 +113,25 @@
             this.tmrGameloop.Interval = 10;
             this.tmrGameloop.Tick += new System.EventHandler(this.tmrGameloop_Tick);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlText;
+            this.pictureBox1.Location = new System.Drawing.Point(973, -95);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(10, 585);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(957, 502);
+            this.ClientSize = new System.Drawing.Size(988, 491);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblScore);
             this.Controls.Add(this.platform);
             this.Controls.Add(this.pbplayer);
@@ -132,6 +145,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbplayer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.platform)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -148,6 +162,7 @@
         private System.Windows.Forms.PictureBox platform;
         private System.Windows.Forms.Label lblScore;
         private System.Windows.Forms.Timer tmrGameloop;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
