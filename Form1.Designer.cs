@@ -58,9 +58,9 @@
             // 
             this.pbplayer.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pbplayer.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pbplayer.Location = new System.Drawing.Point(321, 41);
+            this.pbplayer.Location = new System.Drawing.Point(362, 425);
             this.pbplayer.Name = "pbplayer";
-            this.pbplayer.Size = new System.Drawing.Size(57, 42);
+            this.pbplayer.Size = new System.Drawing.Size(38, 35);
             this.pbplayer.TabIndex = 1;
             this.pbplayer.TabStop = false;
             // 
@@ -100,11 +100,13 @@
             // lblScore
             // 
             this.lblScore.AutoSize = true;
-            this.lblScore.Location = new System.Drawing.Point(13, 12);
+            this.lblScore.Font = new System.Drawing.Font("Stencil", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore.ForeColor = System.Drawing.Color.DarkGreen;
+            this.lblScore.Location = new System.Drawing.Point(12, 9);
             this.lblScore.Name = "lblScore";
-            this.lblScore.Size = new System.Drawing.Size(44, 13);
+            this.lblScore.Size = new System.Drawing.Size(100, 25);
             this.lblScore.TabIndex = 3;
-            this.lblScore.Text = "Score 0";
+            this.lblScore.Text = "Score: 0";
             this.lblScore.Click += new System.EventHandler(this.label1_Click);
             // 
             // tmrGameloop

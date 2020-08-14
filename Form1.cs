@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,8 +13,8 @@ namespace PlatformerHome
 {
     public partial class Form1 : Form
     {
-       
 
+       
         bool isJumping = false;                         // are you jumping no ok boomer!
         List<Coin> cList = new List<Coin>();            //using the list for coinz
         int Score = 0;                                  //using the int to set score
@@ -126,6 +127,14 @@ namespace PlatformerHome
             c2.drawTo(this);
             cList.Add(c2);
             c2.setPos(200, 300);
+            Coin c3 = new Coin();
+            c3.drawTo(this);
+            cList.Add(c3);
+            c3.setPos(200, 400);
+            Coin c4 = new Coin();
+            c4.drawTo(this);
+            cList.Add(c4);
+            c4.setPos(200, 500);
         }
 
         private void tmrGameloop_Tick(object sender, EventArgs e)
@@ -139,9 +148,7 @@ namespace PlatformerHome
                     lblScore.Text = "Score" + Score;
                   
                 }
-
-
-
+                
             }  
                 
                    
@@ -153,6 +160,8 @@ namespace PlatformerHome
         {
 
         }
+
+     
     }
  }
 
