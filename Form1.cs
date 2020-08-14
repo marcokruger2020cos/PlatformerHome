@@ -58,6 +58,15 @@ namespace PlatformerHome
             {
                 pbplayer.Left -= 10;
             }
+            if (pbplayer.Bounds.IntersectsWith(pictureBox2.Bounds) && isJumping == true)
+            {
+                pbplayer.Left += 10;
+                //THIS SECTION HAS TO BE DONE BETTER AS IT DOES NOT WORK WELL.
+            }
+            else if (pbplayer.Bounds.IntersectsWith(pictureBox2.Bounds) && isJumping == false)
+            {
+                pbplayer.Left += 10;
+            }
         }
 
        
@@ -126,15 +135,15 @@ namespace PlatformerHome
             Coin c2 = new Coin();
             c2.drawTo(this);
             cList.Add(c2);
-            c2.setPos(200, 300);
+            c2.setPos(200, 200);
             Coin c3 = new Coin();
             c3.drawTo(this);
             cList.Add(c3);
-            c3.setPos(200, 400);
+            c3.setPos(300, 200);
             Coin c4 = new Coin();
             c4.drawTo(this);
             cList.Add(c4);
-            c4.setPos(200, 500);
+            c4.setPos(400, 200);
         }
 
         private void tmrGameloop_Tick(object sender, EventArgs e)
