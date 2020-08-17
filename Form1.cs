@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Media;
 using System.Text;
@@ -169,12 +170,13 @@ namespace PlatformerHome
                 {
                     
                     MessageBox.Show("SORRY YOU WIN!");
-                    this.Close();// close the game form
+                    this.Close();                       // close the game form
+                   
 
                    
                     
                 }
-
+              
 
             }  
                 

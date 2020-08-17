@@ -102,11 +102,11 @@
             // lblScore
             // 
             this.lblScore.AutoSize = true;
-            this.lblScore.Font = new System.Drawing.Font("Stencil", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblScore.ForeColor = System.Drawing.Color.DarkGreen;
             this.lblScore.Location = new System.Drawing.Point(12, 9);
             this.lblScore.Name = "lblScore";
-            this.lblScore.Size = new System.Drawing.Size(105, 25);
+            this.lblScore.Size = new System.Drawing.Size(98, 25);
             this.lblScore.TabIndex = 3;
             this.lblScore.Text = "Score:  0";
             this.lblScore.Click += new System.EventHandler(this.label1_Click);

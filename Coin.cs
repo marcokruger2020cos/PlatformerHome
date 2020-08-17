@@ -10,16 +10,16 @@ namespace PlatformerHome
 {
     class Coin
     {
-        private PictureBox pbCoin = new PictureBox();
+        private PictureBox pbCoin = new PictureBox();        //This defines it as a picture box
         public Coin()
         {
-            pbCoin.Width = 20;
+            pbCoin.Width = 20;                              //this defines the size of the coin
             pbCoin.Height = 20;
             pbCoin.BackColor = Color.YellowGreen;
         }
         public  void drawTo(Form f)
         {
-            f.Controls.Add(pbCoin);
+            f.Controls.Add(pbCoin);                        //This just starts the new cycle of the code
         }
         public Rectangle getBounds()
         {
@@ -27,7 +27,7 @@ namespace PlatformerHome
         }
         public void setPos(int x,int y)
         {
-            pbCoin.Location = new Point(x, y);
+            pbCoin.Location = new Point(x, y);             //This jhust assighnrs a new class and resets the positions 
         }
     }
 }
