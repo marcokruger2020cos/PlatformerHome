@@ -15,7 +15,7 @@ namespace PlatformerHome
     {
 
        
-        bool isJumping = false;                         // are you jumping no ok boomer!
+        bool isJumping = false;                         // are you jumping? No ok boomer!
         List<Coin> cList = new List<Coin>();            //using the list for coinz
         int Score = 0;                                  //using the int to set score
      
@@ -128,6 +128,7 @@ namespace PlatformerHome
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //This is for my coinz brothers
             Coin c1 = new Coin();
             c1.drawTo(this);
             cList.Add(c1);
@@ -144,6 +145,14 @@ namespace PlatformerHome
             c4.drawTo(this);
             cList.Add(c4);
             c4.setPos(400, 200);
+            Coin c5 = new Coin();
+            c5.drawTo(this);
+            cList.Add(c5);
+            c5.setPos(500, 200);
+            Coin c6 = new Coin();
+            c6.drawTo(this);
+            cList.Add(c6);
+            c6.setPos(600, 430);
         }
 
         private void tmrGameloop_Tick(object sender, EventArgs e)
@@ -155,9 +164,18 @@ namespace PlatformerHome
                     c.setPos(1001, 1001);
                     Score++;
                     lblScore.Text = "Score" + Score;
-                  
                 }
-                
+                if (Score > 4)
+                {
+                    
+                    MessageBox.Show("SORRY YOU WIN!");
+                    this.Close();// close the game form
+
+                   
+                    
+                }
+
+
             }  
                 
                    

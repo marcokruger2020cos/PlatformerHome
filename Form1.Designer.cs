@@ -106,9 +106,9 @@
             this.lblScore.ForeColor = System.Drawing.Color.DarkGreen;
             this.lblScore.Location = new System.Drawing.Point(12, 9);
             this.lblScore.Name = "lblScore";
-            this.lblScore.Size = new System.Drawing.Size(100, 25);
+            this.lblScore.Size = new System.Drawing.Size(105, 25);
             this.lblScore.TabIndex = 3;
-            this.lblScore.Text = "Score: 0";
+            this.lblScore.Text = "Score:  0";
             this.lblScore.Click += new System.EventHandler(this.label1_Click);
             // 
             // tmrGameloop
@@ -134,9 +134,9 @@
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ControlText;
-            this.pictureBox2.Location = new System.Drawing.Point(-4, 9);
+            this.pictureBox2.Location = new System.Drawing.Point(-14, -63);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(10, 585);
+            this.pictureBox2.Size = new System.Drawing.Size(26, 585);
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Visible = false;
