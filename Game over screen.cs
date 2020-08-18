@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PlatformerHome
 {
-    class Game_over_screen
+    class Game_over_screen   //Thhis part can stand open for later iteration
     {
 
 
