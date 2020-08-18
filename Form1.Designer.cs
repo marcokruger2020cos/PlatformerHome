@@ -122,9 +122,9 @@
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlText;
-            this.pictureBox1.Location = new System.Drawing.Point(980, -95);
+            this.pictureBox1.Location = new System.Drawing.Point(981, -95);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(19, 585);
+            this.pictureBox1.Size = new System.Drawing.Size(18, 585);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Visible = false;
@@ -136,7 +136,7 @@
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ControlText;
             this.pictureBox2.Location = new System.Drawing.Point(-14, -63);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(26, 585);
+            this.pictureBox2.Size = new System.Drawing.Size(20, 585);
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Visible = false;

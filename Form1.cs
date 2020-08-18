@@ -166,16 +166,12 @@ namespace PlatformerHome
                     Score++;
                     lblScore.Text = "Score" + Score;
                 }
+
                 if (Score > 4)
                 {
-                    
-                    MessageBox.Show("SORRY YOU WIN!");
-                    this.Close();                       // close the game form
-                   
-
-                   
-                    
-                }
+                 MessageBox.Show("SORRY YOU WIN!");
+                 this.Close();// close the game form
+                 }
               
 
             }  
