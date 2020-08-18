@@ -14,8 +14,9 @@ namespace PlatformerHome
 {
     public partial class Form1 : Form
     {
-
        
+
+
         bool isJumping = false;                         // are you jumping? No ok boomer!
         List<Coin> cList = new List<Coin>();            //using the list for coinz
         int Score = 0;                                  //using the int to set score
@@ -158,7 +159,20 @@ namespace PlatformerHome
 
         private void tmrGameloop_Tick(object sender, EventArgs e)
         {
-            foreach(Coin c in cList)
+            if (Score > 4)
+            {
+                MessageBox.Show("SORRY YOU WIN!");
+                this.Close();// close the game form
+                System.Windows.Forms.Application.Exit();
+                System.Environment.Exit(1);
+            }
+
+
+
+
+
+
+            foreach (Coin c in cList)
             {
                 if(pbplayer.Bounds.IntersectsWith(c.getBounds()))
                 {
@@ -167,11 +181,7 @@ namespace PlatformerHome
                     lblScore.Text = "Score" + Score;
                 }
 
-                if (Score > 4)
-                {
-                 MessageBox.Show("SORRY YOU WIN!");
-                 this.Close();// close the game form
-                 }
+              
               
 
             }  
@@ -179,14 +189,14 @@ namespace PlatformerHome
                    
                     
                     
-                    }
+        }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
-     
+        
     }
  }
 
