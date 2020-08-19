@@ -20,12 +20,23 @@ namespace PlatformerHome
         bool isJumping = false;                         // are you jumping? No ok boomer!
         List<Coin> cList = new List<Coin>();            //using the list for coinz
         int Score = 0;                                  //using the int to set score
-     
+        private MainMenu mainMenu;
 
 
         public Form1()
         {
             InitializeComponent();
+        
+            mainMenu = new MainMenu();
+            MenuItem File = mainMenu.MenuItems.Add("&About");
+            File.MenuItems.Add(new MenuItem("&New"));
+            File.MenuItems.Add(new MenuItem("&About"));
+            File.MenuItems.Add(new MenuItem("&Exit"));
+            this.Menu = mainMenu;
+            MenuItem About = mainMenu.MenuItems.Add("&Help");
+            About.MenuItems.Add(new MenuItem("&About"));
+            this.Menu = mainMenu;
+           
 
         }
 
@@ -196,7 +207,15 @@ namespace PlatformerHome
 
         }
 
-        
+        private void button2_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
  }
 
