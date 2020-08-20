@@ -1,6 +1,5 @@
 # PlatformerHome Future self Messages
-Message to me
-Net om pas te hou met werk en seker te maak dat ek dit doen.
+This game is liscenced for free by me use it at your own risk of brain cell metldown.
 
 
 

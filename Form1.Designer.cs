@@ -184,7 +184,7 @@
             // 
             this.pbair.Location = new System.Drawing.Point(-35, 27);
             this.pbair.Name = "pbair";
-            this.pbair.Size = new System.Drawing.Size(959, 10);
+            this.pbair.Size = new System.Drawing.Size(1043, 10);
             this.pbair.TabIndex = 7;
             this.pbair.TabStop = false;
             this.pbair.Visible = false;

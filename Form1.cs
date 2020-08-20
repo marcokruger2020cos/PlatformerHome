@@ -175,9 +175,8 @@ namespace PlatformerHome
             if (Score > 4)
             {
                 MessageBox.Show("SORRY YOU WIN!");
-                this.Close();// close the game form
-                System.Windows.Forms.Application.Exit();
-                System.Environment.Exit(1);
+               // close the game form
+               
             }
 
          
