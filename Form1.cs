@@ -20,30 +20,31 @@ namespace PlatformerHome
         bool isJumping = false;                         // are you jumping? No ok boomer!
         List<Coin> cList = new List<Coin>();            //using the list for coinz
         int Score = 0;                                  //using the int to set score
-        private MainMenu mainMenu;
+      
 
 
         public Form1()
         {
             InitializeComponent();
-        
-            mainMenu = new MainMenu();
-            MenuItem File = mainMenu.MenuItems.Add("&About");
-            File.MenuItems.Add(new MenuItem("&New"));
-            File.MenuItems.Add(new MenuItem("&About"));
-            File.MenuItems.Add(new MenuItem("&Exit"));
-            this.Menu = mainMenu;
-            MenuItem About = mainMenu.MenuItems.Add("&Help");
-            About.MenuItems.Add(new MenuItem("&About"));
-            this.Menu = mainMenu;
+
            
-
+           
         }
-
-
+        private void FileExit_clicked(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        private void FileHelp_clicked(object sender, EventArgs e)
+        {
+            Game_Over newForm = new Game_Over();
+            newForm.Show(); 
+        }
 
         private void tmrGravity_Tick(object sender, EventArgs e)
         {
+           
+           
+            //Space for above new code
             if (!pbplayer.Bounds.IntersectsWith(pbground.Bounds) && isJumping == false)
             {
                 pbplayer.Top += 10;
@@ -65,7 +66,7 @@ namespace PlatformerHome
             if (pbplayer.Bounds.IntersectsWith(pictureBox1.Bounds) && isJumping ==true)
             {
                 pbplayer.Left -= 10;
-                                                                                                        //THIS SECTION HAS TO BE DONE BETTER AS IT DOES NOT WORK WELL.
+             //THIS SECTION HAS TO BE DONE BETTER AS IT DOES NOT WORK WELL.
             }
             else if (pbplayer.Bounds.IntersectsWith(pictureBox1.Bounds) && isJumping == false)
             {
@@ -80,6 +81,7 @@ namespace PlatformerHome
             {
                 pbplayer.Left += 10;
             }
+           
         }
 
        
@@ -178,7 +180,7 @@ namespace PlatformerHome
                 System.Environment.Exit(1);
             }
 
-
+         
 
 
 
@@ -202,19 +204,9 @@ namespace PlatformerHome
                     
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            
         }
     }
  }
