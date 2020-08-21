@@ -100,9 +100,9 @@
             // platform
             // 
             this.platform.BackColor = System.Drawing.SystemColors.Highlight;
-            this.platform.Location = new System.Drawing.Point(114, 244);
+            this.platform.Location = new System.Drawing.Point(89, 244);
             this.platform.Name = "platform";
-            this.platform.Size = new System.Drawing.Size(475, 20);
+            this.platform.Size = new System.Drawing.Size(500, 20);
             this.platform.TabIndex = 2;
             this.platform.TabStop = false;
             // 
@@ -169,20 +169,20 @@
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
             this.helpToolStripMenuItem.Text = "Help";
             this.helpToolStripMenuItem.Click += new System.EventHandler(this.FileHelp_clicked);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.FileExit_clicked);
             // 
             // pbair
             // 
-            this.pbair.Location = new System.Drawing.Point(-35, 27);
+            this.pbair.Location = new System.Drawing.Point(-44, 26);
             this.pbair.Name = "pbair";
             this.pbair.Size = new System.Drawing.Size(1043, 10);
             this.pbair.TabIndex = 7;

@@ -20,9 +20,9 @@ namespace PlatformerHome
         bool isJumping = false;                         // are you jumping? No ok boomer!
         List<Coin> cList = new List<Coin>();            //using the list for coinz
         int Score = 0;                                  //using the int to set score
-      
 
 
+        private int _skipframes = 1;//This kinof helps the buffering
         public Form1()
         {
             InitializeComponent();
@@ -54,6 +54,7 @@ namespace PlatformerHome
             if (pbplayer.Bounds.IntersectsWith(platform.Bounds) && isJumping == true)
             {                                                                                                   //Figured this out all on my own feel empty and fufuled.
                 pbplayer.Top += 10;
+                pbplayer.Left += 10;
                
 
             }
@@ -66,7 +67,7 @@ namespace PlatformerHome
             if (pbplayer.Bounds.IntersectsWith(pictureBox1.Bounds) && isJumping ==true)
             {
                 pbplayer.Left -= 10;
-             //THIS SECTION HAS TO BE DONE BETTER AS IT DOES NOT WORK WELL.
+                //THIS SECTION HAS TO BE DONE BETTER AS IT DOES NOT WORK WELL.
             }
             else if (pbplayer.Bounds.IntersectsWith(pictureBox1.Bounds) && isJumping == false)
             {
@@ -174,18 +175,16 @@ namespace PlatformerHome
         {
             if (Score > 4)
             {
-                MessageBox.Show("SORRY YOU WIN!");
+                tmrGameloop.Stop();
+                MessageBox.Show(" YOU WIN!");
                // close the game form
+             
+
+
                
             }
-
-         
-
-
-
-
-            foreach (Coin c in cList)
-            {
+                 foreach (Coin c in cList)
+              {
                 if(pbplayer.Bounds.IntersectsWith(c.getBounds()))
                 {
                     c.setPos(1001, 1001);
@@ -196,7 +195,7 @@ namespace PlatformerHome
               
               
 
-            }  
+              }  
                 
                    
                     

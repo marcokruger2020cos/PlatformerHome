@@ -1,5 +1,21 @@
 # PlatformerHome Future self Messages
-This game is liscenced for free by me use it at your own risk of brain cell metldown.
+This game is liscenced for free use by me use it at your own risk of brain cell metldown.
+
+#Requirments
+Sanity and Hands and Eyes
+Ages 6 to 99
+#Includes
+Great player interactions and even more fun when something bugs out or breaks.
+Enjoy one leve to collect coins and win.
+Infinite replaybility.
+
+
+
+
+
+
+
+
 
 
 
@@ -16,3 +32,7 @@ When all coins are collected game closes
 added a file exit about menu for user control
 you can now exit the game with a button
 now added a help menu for people who dont play games."User Friendly"
+
+#21/08/2020
+working on player smoothnes
+fixed loops breaking

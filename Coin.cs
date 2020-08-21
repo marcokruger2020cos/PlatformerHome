@@ -27,7 +27,7 @@ namespace PlatformerHome
         }
         public void setPos(int x,int y)
         {
-            pbCoin.Location = new Point(x, y);             //This jhust assighnrs a new class and resets the positions 
+            pbCoin.Location = new Point(x, y);             //This jhust assigns a new class and resets the positions 
         }
     }
 }
