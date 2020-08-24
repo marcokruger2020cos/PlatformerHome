@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace PlatformerHome
 {
-    public partial class Game_Over : Form
+    public partial class You_win : Form
     {
-        public Game_Over()
+        public You_win()
         {
             InitializeComponent();
         }
 
-        private void Game_Over_Load(object sender, EventArgs e)
+        private void You_win_Load(object sender, EventArgs e)
         {
             this.TopMost = true;
         }
@@ -25,12 +25,6 @@ namespace PlatformerHome
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("stop doing this" +
-                "");
         }
     }
 }

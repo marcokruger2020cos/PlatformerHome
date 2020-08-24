@@ -14,15 +14,15 @@ namespace PlatformerHome
 {
     public partial class Form1 : Form
     {
-       
 
 
+        
         bool isJumping = false;                         // are you jumping? No ok boomer!
         List<Coin> cList = new List<Coin>();            //using the list for coinz
         int Score = 0;                                  //using the int to set score
 
 
-        private int _skipframes = 1;//This kinof helps the buffering
+        private int _skipframes = 1;                   //This kind of helps the buffering
         public Form1()
         {
             InitializeComponent();
@@ -42,8 +42,12 @@ namespace PlatformerHome
 
         private void tmrGravity_Tick(object sender, EventArgs e)
         {
-           
-           
+
+            if (pbplayer.Bounds.IntersectsWith(pbair.Bounds))
+            {
+                pbplayer.Top += 10;
+            }
+
             //Space for above new code
             if (!pbplayer.Bounds.IntersectsWith(pbground.Bounds) && isJumping == false)
             {
@@ -176,7 +180,9 @@ namespace PlatformerHome
             if (Score > 4)
             {
                 tmrGameloop.Stop();
-                MessageBox.Show(" YOU WIN!");
+                You_win newForm = new You_win();
+                newForm.Show();
+                
                // close the game form
              
 

@@ -7,7 +7,7 @@ using System.Drawing;
 
 namespace PlatformerHome
 {
-    class Enemy
+    class You win
     {
     
             
