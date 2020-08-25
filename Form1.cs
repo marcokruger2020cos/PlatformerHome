@@ -57,15 +57,15 @@ namespace PlatformerHome
             }
             if (pbplayer.Bounds.IntersectsWith(platform.Bounds) && isJumping == true)
             {                                                                                                   //Figured this out all on my own feel empty and fufuled.
-                pbplayer.Top += 10;
-                pbplayer.Left += 10;
+                 pbplayer.Top += 10;
+                 pbplayer.Left -= 10;
                
 
             }
             else if (pbplayer.Bounds.IntersectsWith(platform.Bounds) && isJumping == false)
             {
-                pbplayer.Top -= 10;
-
+                 pbplayer.Top -= 10;
+                 
 
             }
             if (pbplayer.Bounds.IntersectsWith(pictureBox1.Bounds) && isJumping ==true)
@@ -152,7 +152,7 @@ namespace PlatformerHome
             Coin c1 = new Coin();
             c1.drawTo(this);
             cList.Add(c1);
-            c1.setPos(100, 200);
+            c1.setPos(80, 150);
             Coin c2 = new Coin();
             c2.drawTo(this);
             cList.Add(c2);
@@ -177,13 +177,20 @@ namespace PlatformerHome
 
         private void tmrGameloop_Tick(object sender, EventArgs e)
         {
-            if (Score > 4)
+            if(pbplayer.Bounds.IntersectsWith(sun.Bounds) && isJumping == false)
+            {
+                tmrGameloop.Stop();
+                MessageBox.Show("You died.Why did you fly into the sun.");
+
+            }
+
+            if (Score > 5)
             {
                 tmrGameloop.Stop();
                 You_win newForm = new You_win();
                 newForm.Show();
                 
-               // close the game form
+               // Bring up the form to show that you've won.
              
 
 
@@ -209,6 +216,11 @@ namespace PlatformerHome
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void sun_Click(object sender, EventArgs e)
         {
 
         }

@@ -45,6 +45,8 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pbair = new System.Windows.Forms.PictureBox();
+            this.sun = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbplayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.platform)).BeginInit();
@@ -52,6 +54,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbair)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sun)).BeginInit();
             this.SuspendLayout();
             // 
             // pbground
@@ -59,7 +62,7 @@
             this.pbground.BackColor = System.Drawing.SystemColors.Highlight;
             this.pbground.Location = new System.Drawing.Point(-53, 466);
             this.pbground.Name = "pbground";
-            this.pbground.Size = new System.Drawing.Size(1036, 24);
+            this.pbground.Size = new System.Drawing.Size(1036, 50);
             this.pbground.TabIndex = 0;
             this.pbground.TabStop = false;
             // 
@@ -67,7 +70,7 @@
             // 
             this.pbplayer.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pbplayer.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pbplayer.Location = new System.Drawing.Point(359, 425);
+            this.pbplayer.Location = new System.Drawing.Point(352, 427);
             this.pbplayer.Name = "pbplayer";
             this.pbplayer.Size = new System.Drawing.Size(38, 35);
             this.pbplayer.TabIndex = 1;
@@ -128,9 +131,9 @@
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlText;
-            this.pictureBox1.Location = new System.Drawing.Point(981, -95);
+            this.pictureBox1.Location = new System.Drawing.Point(967, -95);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(18, 585);
+            this.pictureBox1.Size = new System.Drawing.Size(18, 589);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Visible = false;
@@ -140,9 +143,9 @@
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ControlText;
-            this.pictureBox2.Location = new System.Drawing.Point(-14, -63);
+            this.pictureBox2.Location = new System.Drawing.Point(-28, -63);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(20, 585);
+            this.pictureBox2.Size = new System.Drawing.Size(20, 589);
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Visible = false;
@@ -153,7 +156,7 @@
             this.aboutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(988, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(974, 24);
             this.menuStrip1.TabIndex = 6;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -189,12 +192,34 @@
             this.pbair.TabStop = false;
             this.pbair.Visible = false;
             // 
+            // sun
+            // 
+            this.sun.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.sun.Location = new System.Drawing.Point(864, 53);
+            this.sun.Name = "sun";
+            this.sun.Size = new System.Drawing.Size(102, 82);
+            this.sun.TabIndex = 8;
+            this.sun.TabStop = false;
+            this.sun.Click += new System.EventHandler(this.sun_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.label1.Location = new System.Drawing.Point(12, 477);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(315, 13);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Tip 1 : move in all directions to escape the pull of the sun monster";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(988, 491);
+            this.ClientSize = new System.Drawing.Size(974, 495);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.sun);
             this.Controls.Add(this.pbair);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -218,6 +243,7 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbair)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sun)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -241,6 +267,8 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.PictureBox pbair;
+        private System.Windows.Forms.PictureBox sun;
+        private System.Windows.Forms.Label label1;
     }
 }
 

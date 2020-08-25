@@ -31,3 +31,8 @@ now added a help menu for people who dont play games."User Friendly"
 #21/08/2020
 working on player smoothnes
 fixed loops breaking
+
+#25/08/2020
+Added the great enemy, the sun.
+added clever ways of getting around glitches
+Added a game over and message if you fly into the sun
