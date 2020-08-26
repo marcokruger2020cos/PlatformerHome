@@ -16,7 +16,9 @@ namespace PlatformerHome
     {
 
 
-        
+        int Force;
+        int Gravity;
+
         bool isJumping = false;                         // are you jumping? No ok boomer!
         List<Coin> cList = new List<Coin>();            //using the list for coinz
         int Score = 0;                                  //using the int to set score
@@ -42,19 +44,19 @@ namespace PlatformerHome
 
         private void tmrGravity_Tick(object sender, EventArgs e)
         {
+            if (!pbplayer.Bounds.IntersectsWith(pbground.Bounds) && isJumping == false)
+            {
+                pbplayer.Top += 10;
 
+
+            }
             if (pbplayer.Bounds.IntersectsWith(pbair.Bounds))
             {
                 pbplayer.Top += 10;
             }
 
             //Space for above new code
-            if (!pbplayer.Bounds.IntersectsWith(pbground.Bounds) && isJumping == false)
-            {
-                pbplayer.Top += 10;
-              
-
-            }
+           
             if (pbplayer.Bounds.IntersectsWith(platform.Bounds) && isJumping == true)
             {                                                                                                   //Figured this out all on my own feel empty and fufuled.
                  pbplayer.Top += 10;
@@ -125,6 +127,13 @@ namespace PlatformerHome
                 tmrleft.Start();
             }
 
+            //Breaker for testing purposes
+
+            if (!isJumping && pbplayer.Bounds.IntersectsWith(pictureBox2.Bounds))
+            {
+                Force = Gravity;
+                isJumping = true;
+            }
 
 
         }
@@ -181,6 +190,13 @@ namespace PlatformerHome
             {
                 tmrGameloop.Stop();
                 MessageBox.Show("You died.Why did you fly into the sun.");
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+                for (int i = Application.OpenForms.Count - 1; i >= 0; i--)
+                {
+                    if (Application.OpenForms[i].Name != "Menu")
+                        Application.OpenForms[i].Close();
+                }
 
             }
 
@@ -222,7 +238,7 @@ namespace PlatformerHome
 
         private void sun_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("I WILL KILL You");
         }
     }
  }

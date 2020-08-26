@@ -47,6 +47,7 @@
             this.pbair = new System.Windows.Forms.PictureBox();
             this.sun = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbplayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.platform)).BeginInit();
@@ -70,7 +71,7 @@
             // 
             this.pbplayer.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pbplayer.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pbplayer.Location = new System.Drawing.Point(352, 427);
+            this.pbplayer.Location = new System.Drawing.Point(217, 425);
             this.pbplayer.Name = "pbplayer";
             this.pbplayer.Size = new System.Drawing.Size(38, 35);
             this.pbplayer.TabIndex = 1;
@@ -79,25 +80,25 @@
             // tmrGravity
             // 
             this.tmrGravity.Enabled = true;
-            this.tmrGravity.Interval = 10;
+            this.tmrGravity.Interval = 1;
             this.tmrGravity.Tick += new System.EventHandler(this.tmrGravity_Tick);
             // 
             // tmrup
             // 
             this.tmrup.Enabled = true;
-            this.tmrup.Interval = 10;
+            this.tmrup.Interval = 1;
             this.tmrup.Tick += new System.EventHandler(this.tmrup_Tick);
             // 
             // tmrRight
             // 
             this.tmrRight.Enabled = true;
-            this.tmrRight.Interval = 10;
+            this.tmrRight.Interval = 1;
             this.tmrRight.Tick += new System.EventHandler(this.tmrright_Tick);
             // 
             // tmrleft
             // 
             this.tmrleft.Enabled = true;
-            this.tmrleft.Interval = 10;
+            this.tmrleft.Interval = 1;
             this.tmrleft.Tick += new System.EventHandler(this.tmrleft_Tick);
             // 
             // platform
@@ -112,9 +113,10 @@
             // lblScore
             // 
             this.lblScore.AutoSize = true;
+            this.lblScore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.lblScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblScore.ForeColor = System.Drawing.Color.DarkGreen;
-            this.lblScore.Location = new System.Drawing.Point(12, 39);
+            this.lblScore.Location = new System.Drawing.Point(10, 40);
             this.lblScore.Name = "lblScore";
             this.lblScore.Size = new System.Drawing.Size(98, 25);
             this.lblScore.TabIndex = 3;
@@ -123,7 +125,7 @@
             // tmrGameloop
             // 
             this.tmrGameloop.Enabled = true;
-            this.tmrGameloop.Interval = 10;
+            this.tmrGameloop.Interval = 1;
             this.tmrGameloop.Tick += new System.EventHandler(this.tmrGameloop_Tick);
             // 
             // pictureBox1
@@ -185,12 +187,11 @@
             // 
             // pbair
             // 
-            this.pbair.Location = new System.Drawing.Point(-26, 27);
+            this.pbair.Location = new System.Drawing.Point(-29, 27);
             this.pbair.Name = "pbair";
             this.pbair.Size = new System.Drawing.Size(1043, 10);
             this.pbair.TabIndex = 7;
             this.pbair.TabStop = false;
-            this.pbair.Visible = false;
             // 
             // sun
             // 
@@ -212,12 +213,23 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Tip 1 : move in all directions to escape the pull of the sun monster";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label2.Location = new System.Drawing.Point(333, 477);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(216, 13);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Up Down Left Right Keys to move. Up to Fly";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(974, 495);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.sun);
             this.Controls.Add(this.pbair);
@@ -269,6 +281,7 @@
         private System.Windows.Forms.PictureBox pbair;
         private System.Windows.Forms.PictureBox sun;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 

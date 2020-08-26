@@ -25,6 +25,11 @@ namespace PlatformerHome
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+            for (int i = Application.OpenForms.Count - 1; i >= 0; i--)
+            {
+                if (Application.OpenForms[i].Name != "Menu")
+                    Application.OpenForms[i].Close();
+            }
         }
     }
 }
