@@ -42,5 +42,15 @@ Cleaned up features and Ui.
 When exiting one form it can now close all.
 implemented the better tick timing 
 
+#28/08/2020
+
+
+
+
+
+
+
+
+
 use this for gravity code 
 https://www.codeproject.com/Tips/881397/Csharp-Simple-D-Game-Physics-Gravity-Jumping-Movem
