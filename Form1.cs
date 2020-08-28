@@ -18,6 +18,7 @@ namespace PlatformerHome
 
         int Force;
         int Gravity;
+        
 
         bool isJumping = false;                         // are you jumping? No ok boomer!
         List<Coin> cList = new List<Coin>();            //using the list for coinz
@@ -238,6 +239,7 @@ namespace PlatformerHome
 
         private void sun_Click(object sender, EventArgs e)
         {
+            
             MessageBox.Show("I WILL KILL You");
         }
     }

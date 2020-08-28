@@ -43,6 +43,7 @@ When exiting one form it can now close all.
 implemented the better tick timing 
 
 #28/08/2020
+background is now less extreme
 
 
 

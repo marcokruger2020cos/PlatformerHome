@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pbground = new System.Windows.Forms.PictureBox();
             this.pbplayer = new System.Windows.Forms.PictureBox();
             this.tmrGravity = new System.Windows.Forms.Timer(this.components);
@@ -104,9 +105,9 @@
             // platform
             // 
             this.platform.BackColor = System.Drawing.SystemColors.Highlight;
-            this.platform.Location = new System.Drawing.Point(89, 244);
+            this.platform.Location = new System.Drawing.Point(-29, 244);
             this.platform.Name = "platform";
-            this.platform.Size = new System.Drawing.Size(500, 20);
+            this.platform.Size = new System.Drawing.Size(618, 20);
             this.platform.TabIndex = 2;
             this.platform.TabStop = false;
             // 
@@ -195,12 +196,16 @@
             // 
             // sun
             // 
-            this.sun.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.sun.Location = new System.Drawing.Point(864, 53);
+            this.sun.BackColor = System.Drawing.Color.White;
+            this.sun.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sun.BackgroundImage")));
+            this.sun.ErrorImage = null;
+            this.sun.InitialImage = null;
+            this.sun.Location = new System.Drawing.Point(879, 40);
             this.sun.Name = "sun";
-            this.sun.Size = new System.Drawing.Size(102, 82);
+            this.sun.Size = new System.Drawing.Size(82, 186);
             this.sun.TabIndex = 8;
             this.sun.TabStop = false;
+            this.sun.Tag = "Enemy1";
             this.sun.Click += new System.EventHandler(this.sun_Click);
             // 
             // label1
