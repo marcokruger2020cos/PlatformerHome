@@ -200,7 +200,7 @@
             this.sun.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sun.BackgroundImage")));
             this.sun.ErrorImage = null;
             this.sun.InitialImage = null;
-            this.sun.Location = new System.Drawing.Point(879, 40);
+            this.sun.Location = new System.Drawing.Point(880, 40);
             this.sun.Name = "sun";
             this.sun.Size = new System.Drawing.Size(82, 186);
             this.sun.TabIndex = 8;

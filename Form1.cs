@@ -187,7 +187,19 @@ namespace PlatformerHome
 
         private void tmrGameloop_Tick(object sender, EventArgs e)
         {
-            if(pbplayer.Bounds.IntersectsWith(sun.Bounds) && isJumping == false)
+
+            //int width = this.Width = 82; // get the width of Form.
+
+            if (sun.Location.X > width - sun.Width) //to check condition if pic box is touch the boundroy of form width
+            {
+                sun.Location = new Point(1, sun.Location.Y); // pic box is set to the new point. here 1 is indicate of X coordinate.
+            }
+            else
+            {
+                sun.Location = new Point(sun.Location.X + 100, sun.Location.Y); // to move picture box from x coordinate by 100 Point.
+            }
+            //Delete above code if dead
+            if (pbplayer.Bounds.IntersectsWith(sun.Bounds) && isJumping == false)
             {
                 tmrGameloop.Stop();
                 MessageBox.Show("You died.Why did you fly into the sun.");
@@ -239,7 +251,7 @@ namespace PlatformerHome
 
         private void sun_Click(object sender, EventArgs e)
         {
-            
+          
             MessageBox.Show("I WILL KILL You");
         }
     }
