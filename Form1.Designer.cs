@@ -107,7 +107,7 @@
             this.platform.BackColor = System.Drawing.SystemColors.Highlight;
             this.platform.Location = new System.Drawing.Point(-29, 244);
             this.platform.Name = "platform";
-            this.platform.Size = new System.Drawing.Size(618, 20);
+            this.platform.Size = new System.Drawing.Size(523, 20);
             this.platform.TabIndex = 2;
             this.platform.TabStop = false;
             // 

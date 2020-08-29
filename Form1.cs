@@ -162,7 +162,7 @@ namespace PlatformerHome
             Coin c1 = new Coin();
             c1.drawTo(this);
             cList.Add(c1);
-            c1.setPos(80, 150);
+            c1.setPos(80, 300);
             Coin c2 = new Coin();
             c2.drawTo(this);
             cList.Add(c2);
@@ -188,7 +188,7 @@ namespace PlatformerHome
         private void tmrGameloop_Tick(object sender, EventArgs e)
         {
 
-            //int width = this.Width = 82; // get the width of Form.
+            int width = this.Width = 1000; // get the width of Form.
 
             if (sun.Location.X > width - sun.Width) //to check condition if pic box is touch the boundroy of form width
             {
@@ -196,7 +196,7 @@ namespace PlatformerHome
             }
             else
             {
-                sun.Location = new Point(sun.Location.X + 100, sun.Location.Y); // to move picture box from x coordinate by 100 Point.
+                sun.Location = new Point(sun.Location.X + 5, sun.Location.Y); // to move picture box from x coordinate by 100 Point.
             }
             //Delete above code if dead
             if (pbplayer.Bounds.IntersectsWith(sun.Bounds) && isJumping == false)
