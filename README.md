@@ -51,6 +51,8 @@ added pause
 added scrollong enemy that added shittons of bugs
 worked on some bugs 
 
+#31/08/2020 
+Styled the game worked out some kinks and added more.STONKS!
 
 
 
