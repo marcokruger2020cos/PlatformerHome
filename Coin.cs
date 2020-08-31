@@ -15,7 +15,7 @@ namespace PlatformerHome
         {
             pbCoin.Width = 20;                              //this defines the size of the coin
             pbCoin.Height = 20;
-            pbCoin.BackColor = Color.YellowGreen;
+            pbCoin.BackColor = Color.MediumVioletRed;
         }
         public  void drawTo(Form f)
         {

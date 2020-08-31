@@ -45,6 +45,8 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pauseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.startToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pbair = new System.Windows.Forms.PictureBox();
             this.sun = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -72,6 +74,7 @@
             // 
             this.pbplayer.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pbplayer.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pbplayer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbplayer.BackgroundImage")));
             this.pbplayer.Location = new System.Drawing.Point(217, 425);
             this.pbplayer.Name = "pbplayer";
             this.pbplayer.Size = new System.Drawing.Size(38, 35);
@@ -105,6 +108,7 @@
             // platform
             // 
             this.platform.BackColor = System.Drawing.SystemColors.Highlight;
+            this.platform.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("platform.BackgroundImage")));
             this.platform.Location = new System.Drawing.Point(-29, 244);
             this.platform.Name = "platform";
             this.platform.Size = new System.Drawing.Size(523, 20);
@@ -114,9 +118,9 @@
             // lblScore
             // 
             this.lblScore.AutoSize = true;
-            this.lblScore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.lblScore.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.lblScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblScore.ForeColor = System.Drawing.Color.DarkGreen;
+            this.lblScore.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblScore.Location = new System.Drawing.Point(10, 40);
             this.lblScore.Name = "lblScore";
             this.lblScore.Size = new System.Drawing.Size(98, 25);
@@ -156,7 +160,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem});
+            this.aboutToolStripMenuItem,
+            this.pauseToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(974, 24);
@@ -186,8 +191,25 @@
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.FileExit_clicked);
             // 
+            // pauseToolStripMenuItem
+            // 
+            this.pauseToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.startToolStripMenuItem});
+            this.pauseToolStripMenuItem.Name = "pauseToolStripMenuItem";
+            this.pauseToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.pauseToolStripMenuItem.Text = "Pause";
+            this.pauseToolStripMenuItem.Click += new System.EventHandler(this.pauseToolStripMenuItem_Click);
+            // 
+            // startToolStripMenuItem
+            // 
+            this.startToolStripMenuItem.Name = "startToolStripMenuItem";
+            this.startToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
+            this.startToolStripMenuItem.Text = "Start";
+            this.startToolStripMenuItem.Click += new System.EventHandler(this.startToolStripMenuItem_Click);
+            // 
             // pbair
             // 
+            this.pbair.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pbair.Location = new System.Drawing.Point(-29, 27);
             this.pbair.Name = "pbair";
             this.pbair.Size = new System.Drawing.Size(1043, 10);
@@ -200,9 +222,9 @@
             this.sun.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sun.BackgroundImage")));
             this.sun.ErrorImage = null;
             this.sun.InitialImage = null;
-            this.sun.Location = new System.Drawing.Point(880, 40);
+            this.sun.Location = new System.Drawing.Point(431, 40);
             this.sun.Name = "sun";
-            this.sun.Size = new System.Drawing.Size(82, 186);
+            this.sun.Size = new System.Drawing.Size(85, 200);
             this.sun.TabIndex = 8;
             this.sun.TabStop = false;
             this.sun.Tag = "Enemy1";
@@ -232,7 +254,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(974, 495);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -246,6 +269,7 @@
             this.Controls.Add(this.pbground);
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
@@ -287,6 +311,8 @@
         private System.Windows.Forms.PictureBox sun;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ToolStripMenuItem pauseToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem startToolStripMenuItem;
     }
 }
 

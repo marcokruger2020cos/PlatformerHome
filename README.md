@@ -6,7 +6,7 @@ Sanity and Hands and Eyes
 Ages 6 to 99
 #Includes
 Great player interactions and even more fun when something bugs out or breaks.
-Enjoy one leve to collect coins and win.
+Enjoy one level to collect coins and win.And a brick od a enemy to wreck the player.
 Infinite replaybility.
 
 
@@ -44,6 +44,12 @@ implemented the better tick timing
 
 #28/08/2020
 background is now less extreme
+
+#29/08/2020
+Working on wekend to fix this shit
+added pause
+added scrollong enemy that added shittons of bugs
+worked on some bugs 
 
 
 

@@ -16,16 +16,16 @@ namespace PlatformerHome
     {
 
 
-        int Force;
-        int Gravity;
-        
+        int Force; // IS For better implementation eventually
+        int Gravity ; // IS For better implementation eventually
+
 
         bool isJumping = false;                         // are you jumping? No ok boomer!
         List<Coin> cList = new List<Coin>();            //using the list for coinz
         int Score = 0;                                  //using the int to set score
 
 
-        private int _skipframes = 1;                   //This kind of helps the buffering
+        private int _skipframes = 1;                   //This kind of helps the buffering if you want to use it
         public Form1()
         {
             InitializeComponent();
@@ -198,6 +198,7 @@ namespace PlatformerHome
             {
                 sun.Location = new Point(sun.Location.X + 5, sun.Location.Y); // to move picture box from x coordinate by 100 Point.
             }
+
             //Delete above code if dead
             if (pbplayer.Bounds.IntersectsWith(sun.Bounds) && isJumping == false)
             {
@@ -220,24 +221,17 @@ namespace PlatformerHome
                 newForm.Show();
                 
                // Bring up the form to show that you've won.
-             
-
-
-               
             }
+
                  foreach (Coin c in cList)
-              {
-                if(pbplayer.Bounds.IntersectsWith(c.getBounds()))
-                {
-                    c.setPos(1001, 1001);
-                    Score++;
-                    lblScore.Text = "Score" + Score;
-                }
-
-              
-              
-
-              }  
+                 {
+                    if(pbplayer.Bounds.IntersectsWith(c.getBounds()))
+                    {
+                        c.setPos(1001, 1001);
+                        Score++;
+                        lblScore.Text = "Score" + Score;
+                    }
+                 }  
                 
                    
                     
@@ -253,6 +247,26 @@ namespace PlatformerHome
         {
           
             MessageBox.Show("I WILL KILL You");
+        }
+
+        private void pauseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tmrGameloop.Stop();
+            tmrGravity.Stop();
+            tmrleft.Stop();
+            tmrRight.Stop();
+            tmrup.Stop();
+            
+        }
+
+        private void startToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tmrGameloop.Start();
+            tmrGravity.Start();
+            tmrleft.Start();
+            tmrRight.Start();
+            tmrup.Start();
+           
         }
     }
  }
