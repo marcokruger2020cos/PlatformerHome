@@ -1,9 +1,10 @@
-# PlatformerHome Future self Messages
+#About/Info/History
 This game is liscenced for free use by me use it at your own risk of brain cell metldown.
 
 #Requirments
-Sanity and Hands and Eyes
+Sanity/Insanity and Hands and Eyes
 Ages 6 to 99
+
 #Includes
 Great player interactions and even more fun when something bugs out or breaks.
 Enjoy one level to collect coins and win.And a brick od a enemy to wreck the player.
