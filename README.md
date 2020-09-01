@@ -7,7 +7,7 @@ Ages 6 to 99
 #Includes
 Great player interactions and even more fun when something bugs out or breaks.
 Enjoy one level to collect coins and win.And a brick od a enemy to wreck the player.
-Infinite replaybility.
+Infinite replaybility.A certain unique art style.
 
 
 
@@ -53,6 +53,10 @@ worked on some bugs
 
 #31/08/2020 
 Styled the game worked out some kinks and added more.STONKS!
+
+#01/09/2020
+There now is evidence of work on github
+Added tons of little modifications to better prepare.You can now melt your eyes.
 
 
 

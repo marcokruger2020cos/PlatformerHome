@@ -61,7 +61,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(290, 50);
+            this.label2.Location = new System.Drawing.Point(291, 35);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(190, 13);
             this.label2.TabIndex = 2;
@@ -106,11 +106,11 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(296, 199);
+            this.label7.Location = new System.Drawing.Point(313, 201);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(184, 13);
+            this.label7.Size = new System.Drawing.Size(148, 13);
             this.label7.TabIndex = 7;
-            this.label7.Text = "Avoid the gravitational pull of the sun.";
+            this.label7.Text = "Avoid touching  the roller door";
             // 
             // Game_Over
             // 

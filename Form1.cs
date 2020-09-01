@@ -56,19 +56,18 @@ namespace PlatformerHome
                 pbplayer.Top += 10;
             }
 
-            //Space for above new code
+            //Space for above new code will probaly break
            
             if (pbplayer.Bounds.IntersectsWith(platform.Bounds) && isJumping == true)
             {                                                                                                   //Figured this out all on my own feel empty and fufuled.
                  pbplayer.Top += 10;
                  pbplayer.Left -= 10;
-               
-
+                 //THIS SECTION HAS TO BE DONE BETTER AS IT DOES NOT WORK WELL.
             }
             else if (pbplayer.Bounds.IntersectsWith(platform.Bounds) && isJumping == false)
             {
                  pbplayer.Top -= 10;
-                 
+                //THIS SECTION HAS TO BE DONE BETTER AS IT DOES NOT WORK WELL.
 
             }
             if (pbplayer.Bounds.IntersectsWith(pictureBox1.Bounds) && isJumping ==true)
@@ -94,7 +93,7 @@ namespace PlatformerHome
 
        
 
-    private void tmrup_Tick(object sender, EventArgs e)
+    private void tmrup_Tick(object sender, EventArgs e)                  //Going up is a tick
         {
             pbplayer.Top -= 10;
             isJumping = true;
@@ -183,6 +182,7 @@ namespace PlatformerHome
             c6.drawTo(this);
             cList.Add(c6);
             c6.setPos(600, 430);
+            //This is for my coinz brothers
         }
 
         private void tmrGameloop_Tick(object sender, EventArgs e)
@@ -251,6 +251,7 @@ namespace PlatformerHome
 
         private void pauseToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //This is if you press pause
             tmrGameloop.Stop();
             tmrGravity.Stop();
             tmrleft.Stop();
@@ -261,6 +262,7 @@ namespace PlatformerHome
 
         private void startToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //This is if you press play
             tmrGameloop.Start();
             tmrGravity.Start();
             tmrleft.Start();

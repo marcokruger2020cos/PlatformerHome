@@ -19,12 +19,12 @@ namespace PlatformerHome
 
         private void You_win_Load(object sender, EventArgs e)
         {
-            this.TopMost = true;
+            this.TopMost = true;           //Sets dominant form
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Close();             //Closes all forms
             for (int i = Application.OpenForms.Count - 1; i >= 0; i--)
             {
                 if (Application.OpenForms[i].Name != "Menu")

@@ -29,8 +29,7 @@ namespace PlatformerHome
 
         private void label1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("stop doing this" +
-                "");
+            MessageBox.Show("stop doing this" +   "   ");
         }
     }
 }
