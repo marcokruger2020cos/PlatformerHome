@@ -35,11 +35,11 @@ namespace PlatformerHome
         }
         private void FileExit_clicked(object sender, EventArgs e)
         {
-            this.Close();
+            this.Close();  //The game gets closed
         }
         private void FileHelp_clicked(object sender, EventArgs e)
         {
-            Game_Over newForm = new Game_Over();
+            Game_Over newForm = new Game_Over();           //Opens the help form
             newForm.Show(); 
         }
 
@@ -108,9 +108,9 @@ namespace PlatformerHome
             pbplayer.Left -= 10;
         }
 
-      
+                                                                          //Going up is a tick
 
-       
+
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {                                                         //THIS IS THE INSTRUCTIONS FOR MOVEMENT
@@ -131,8 +131,8 @@ namespace PlatformerHome
 
             if (!isJumping && pbplayer.Bounds.IntersectsWith(pictureBox2.Bounds))
             {
-                Force = Gravity;
-                isJumping = true;
+                Force = Gravity;             //If iprovements were to be made use this
+                isJumping = true;            //If iprovements were to be made use this
             }
 
 
@@ -238,10 +238,7 @@ namespace PlatformerHome
                     
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        
 
         private void sun_Click(object sender, EventArgs e)
         {

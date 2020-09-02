@@ -23,7 +23,7 @@ namespace PlatformerHome
         }
         public Rectangle getBounds()
         {
-            return pbCoin.Bounds;
+            return pbCoin.Bounds;                         //Reset away
         }
         public void setPos(int x,int y)
         {

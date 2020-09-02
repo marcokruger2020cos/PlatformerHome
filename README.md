@@ -1,6 +1,7 @@
 # PlatformerHome Future self Messages
 This game is liscenced for free use by me use it at your own risk of brain cell metldown.
 
+
 #Requirments
 Sanity and Hands and Eyes
 Ages 6 to 99
@@ -57,6 +58,9 @@ Styled the game worked out some kinks and added more.STONKS!
 #01/09/2020
 There now is evidence of work on github
 Added tons of little modifications to better prepare.You can now melt your eyes.
+
+#03/09/2020
+Before weekend days
 
 
 

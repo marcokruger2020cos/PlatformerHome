@@ -19,7 +19,7 @@ namespace PlatformerHome
 
         private void You_win_Load(object sender, EventArgs e)
         {
-            this.TopMost = true;           //Sets dominant form
+            this.TopMost = true;           //Sets dominant form ovewrites under forms
         }
 
         private void button1_Click(object sender, EventArgs e)

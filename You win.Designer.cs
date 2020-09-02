@@ -44,8 +44,8 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkMagenta;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.BackColor = System.Drawing.Color.Crimson;
+            this.button2.Font = new System.Drawing.Font("Lucida Handwriting", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(183, 140);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(668, 230);
