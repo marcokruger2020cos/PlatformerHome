@@ -9,7 +9,7 @@ Ages 6 to 99
 #Includes
 Great player interactions and even more fun when something bugs out or breaks.
 Enjoy one level to collect coins and win.And a brick od a enemy to wreck the player.
-Infinite replaybility.A certain unique art style.
+Infinite replaybility.A certain unique art style.A very intuitive help menu.
 
 
 
@@ -62,7 +62,11 @@ Added tons of little modifications to better prepare.You can now melt your eyes.
 
 #03/09/2020
 Before weekend days
+clened it up
 
+#04/09/2020
+Finilised for requirments
+the control is still broke
 
 
 

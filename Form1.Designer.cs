@@ -81,6 +81,7 @@
             this.pbplayer.Size = new System.Drawing.Size(38, 35);
             this.pbplayer.TabIndex = 1;
             this.pbplayer.TabStop = false;
+            this.pbplayer.Click += new System.EventHandler(this.pbplayer_Click);
             // 
             // tmrGravity
             // 
@@ -124,9 +125,9 @@
             this.lblScore.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblScore.Location = new System.Drawing.Point(10, 40);
             this.lblScore.Name = "lblScore";
-            this.lblScore.Size = new System.Drawing.Size(98, 25);
+            this.lblScore.Size = new System.Drawing.Size(164, 25);
             this.lblScore.TabIndex = 3;
-            this.lblScore.Text = "Score:  0";
+            this.lblScore.Text = "Marco Score:  0";
             // 
             // tmrGameloop
             // 

@@ -47,10 +47,10 @@ namespace PlatformerHome
         {
             if (!pbplayer.Bounds.IntersectsWith(pbground.Bounds) && isJumping == false)
             {
-                pbplayer.Top += 10;
-
-
+                pbplayer.Top += 10; 
             }
+            //THe code above is weird a ! is a not. Does it mean its not interacting with
+
             if (pbplayer.Bounds.IntersectsWith(pbair.Bounds))
             {
                 pbplayer.Top += 10;
@@ -93,7 +93,7 @@ namespace PlatformerHome
 
        
 
-    private void tmrup_Tick(object sender, EventArgs e)                  //Going up is a tick
+    private void tmrup_Tick(object sender, EventArgs e)                  //Going up is a tick. Yes a tick.
         {
             pbplayer.Top -= 10;
             isJumping = true;
@@ -108,7 +108,7 @@ namespace PlatformerHome
             pbplayer.Left -= 10;
         }
 
-                                                                          //Going up is a tick
+                                                                          //Going up is a tick. Yes a tick.
 
 
 
@@ -157,6 +157,9 @@ namespace PlatformerHome
 
         private void Form1_Load(object sender, EventArgs e)
         {
+          
+
+
             //This is for my coinz brothers
             Coin c1 = new Coin();
             c1.drawTo(this);
@@ -196,7 +199,7 @@ namespace PlatformerHome
             }
             else
             {
-                sun.Location = new Point(sun.Location.X + 5, sun.Location.Y); // to move picture box from x coordinate by 100 Point.
+                sun.Location = new Point(sun.Location.X + 6, sun.Location.Y); // to move picture box from x coordinate by 100 Point.
             }
 
             //Delete above code if dead
@@ -233,9 +236,6 @@ namespace PlatformerHome
                     }
                  }  
                 
-                   
-                    
-                    
         }
 
         
@@ -244,6 +244,15 @@ namespace PlatformerHome
         {
           
             MessageBox.Show("I WILL KILL You");
+        }
+
+        private void pbplayer_Click(object sender, EventArgs e)
+        {
+
+            MessageBox.Show("Up key to fly up " +
+                            "Left to go left " +
+                            "Right to go Right" +
+                            "Collect all coins to win");
         }
 
         private void pauseToolStripMenuItem_Click(object sender, EventArgs e)
@@ -266,6 +275,11 @@ namespace PlatformerHome
             tmrRight.Start();
             tmrup.Start();
            
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
  }
