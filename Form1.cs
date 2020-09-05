@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace PlatformerHome
 {
     public partial class Form1 : Form
@@ -206,7 +207,7 @@ namespace PlatformerHome
             if (pbplayer.Bounds.IntersectsWith(sun.Bounds) && isJumping == false)
             {
                 tmrGameloop.Stop();
-                MessageBox.Show("You died.Why did you fly into the sun.");
+                MessageBox.Show("You died.Got Crushed .");
                 this.DialogResult = DialogResult.OK;
                 this.Close();
                 for (int i = Application.OpenForms.Count - 1; i >= 0; i--)
@@ -221,7 +222,11 @@ namespace PlatformerHome
             {
                 tmrGameloop.Stop();
                 You_win newForm = new You_win();
+               
                 newForm.Show();
+                
+
+                
                 
                // Bring up the form to show that you've won.
             }

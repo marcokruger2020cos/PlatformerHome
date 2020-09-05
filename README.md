@@ -8,10 +8,17 @@ Ages 6 to 99
 
 #Includes
 Great player interactions and even more fun when something bugs out or breaks.
-Enjoy one level to collect coins and win.And a brick od a enemy to wreck the player.
+Enjoy one level to collect coins and win.And a brick of a enemy to wreck the player.
 Infinite replaybility.A certain unique art style and more.
 
+#Learning
+In this assesment ive learned alot.Ive gone from not knowing what c sharp is to building this wacky first try but
+ive gained valueble insight.
 
+#Technical
+Ive used a picturebox paint arena for collision not perfect but works.
+Coins are in a list and gets ported away wwhen intersected.
+Planning was done on github.
 
 
 
@@ -65,13 +72,12 @@ Before weekend days
 
 #04/09/2020
 Finilised for requirments
-the control is still broke
+
+
+
+About C 2020
 
 
 
 
 
-
-
-use this for gravity code 
-https://www.codeproject.com/Tips/881397/Csharp-Simple-D-Game-Physics-Gravity-Jumping-Movem

@@ -52,6 +52,7 @@
             this.sun = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbplayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.platform)).BeginInit();
@@ -120,14 +121,14 @@
             // lblScore
             // 
             this.lblScore.AutoSize = true;
-            this.lblScore.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.lblScore.BackColor = System.Drawing.SystemColors.Control;
             this.lblScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblScore.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblScore.Location = new System.Drawing.Point(10, 40);
+            this.lblScore.Location = new System.Drawing.Point(212, 2);
             this.lblScore.Name = "lblScore";
-            this.lblScore.Size = new System.Drawing.Size(164, 25);
+            this.lblScore.Size = new System.Drawing.Size(98, 25);
             this.lblScore.TabIndex = 3;
-            this.lblScore.Text = "Marco Score:  0";
+            this.lblScore.Text = "Score:  0";
             // 
             // tmrGameloop
             // 
@@ -163,10 +164,11 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem,
-            this.pauseToolStripMenuItem});
+            this.pauseToolStripMenuItem,
+            this.toolStripTextBox1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(974, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(974, 27);
             this.menuStrip1.TabIndex = 6;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -176,7 +178,7 @@
             this.helpToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 23);
             this.aboutToolStripMenuItem.Text = "About";
             // 
             // helpToolStripMenuItem
@@ -198,7 +200,7 @@
             this.pauseToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.startToolStripMenuItem});
             this.pauseToolStripMenuItem.Name = "pauseToolStripMenuItem";
-            this.pauseToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.pauseToolStripMenuItem.Size = new System.Drawing.Size(50, 23);
             this.pauseToolStripMenuItem.Text = "Pause";
             this.pauseToolStripMenuItem.Click += new System.EventHandler(this.pauseToolStripMenuItem_Click);
             // 
@@ -251,6 +253,13 @@
             this.label2.Size = new System.Drawing.Size(216, 13);
             this.label2.TabIndex = 10;
             this.label2.Text = "Up Down Left Right Keys to move. Up to Fly";
+            // 
+            // toolStripTextBox1
+            // 
+            this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStripTextBox1.Name = "toolStripTextBox1";
+            this.toolStripTextBox1.Size = new System.Drawing.Size(100, 23);
+            this.toolStripTextBox1.Text = "Name:";
             // 
             // Form1
             // 
@@ -315,6 +324,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ToolStripMenuItem pauseToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem startToolStripMenuItem;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
     }
 }
 
