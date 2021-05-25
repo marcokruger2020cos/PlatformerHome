@@ -21,7 +21,7 @@ namespace PlatformerHome
         {
             this.TopMost = true;           //Sets dominant form ovewrites under forms
         }
-
+        //Comment important
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();             //Closes all forms
